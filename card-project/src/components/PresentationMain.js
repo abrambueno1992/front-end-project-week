@@ -188,12 +188,10 @@ export class PresentationMain extends React.Component {
 			this.setState({
 				orderTag: !this.state.orderTag
 			});
-			console.log('original notes value: ', originalNotes)
-		
-			
+			// console.log('original notes value: ', originalNotes)			
 
 			let tagArr = this.state.list.sort(this.dynamicSort('tag'));
-			console.log('New ARrray is: ', tagArr);
+			// console.log('New ARrray is: ', tagArr);
 			this.setState({
 				list: tagArr
 			});
